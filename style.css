@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #FE2A2B;
+}
+
+.container {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
