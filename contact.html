@@ -22,9 +22,146 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            background: url(./logo-maxsof.jpg);
-            background-size: cover;
+            background-color: #d4dbca;
+        }
+
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .contact .content h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: black;
+
+        }
+
+        .contact .content p {
             
+            font-weight: 300;
+            color: black;
+
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin-top: 30px;
+
+        }
+
+        .container .contact-info {
+            width: 50px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .container .contact-info .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+
+        }
+
+        .container .contact-info .box .icon {
+            min-width: 60px;
+            height: 60px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+        }
+
+        .container .contact-info {
+            position: relative;
+            display: flex;
+            padding: 20px 0;
+        }
+        .container .contact-info .box .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: black;
+            flex-direction: column;
+            font-weight: 300;
+
+        }
+
+        .container .contact-info .box .text h3 {
+            font-weight: 500;
+            color: black;
+
+        }
+
+        .contactform {
+            width: 40%;
+            padding: 40px;
+            background-color: aliceblue;
+            margin-left: 200px;
+        } 
+
+        .contactform h2 {
+            font-size: 30px;
+            color: black;
+            font-weight: 500;
+        }
+
+        .contactform .inputbox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+            
+        }
+
+        .contactform .inputbox input,
+        .contactform .inputbox textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+            resize: none;
+        }
+
+        .contactform .inputbox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: black;
+        }
+
+        .contactform .inputbox input:focus ~ span,
+        .contactform .inputbox input:valid ~ span,
+        .contactform .inputbox textarea:focus ~ span,
+        .contactform .inputbox textarea:valid ~ span
+         {
+            color: aqua;
+            font-size: 12px;
+            transform: translateY(-20px);
+
+        }
+
+        .contactform .inputbox input [type="submit"] {
+            width: 100px;
+            background-color: #d4dbca;
+            color: aliceblue;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+
         }
     </style>
 
